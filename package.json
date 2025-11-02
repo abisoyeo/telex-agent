@@ -2,14 +2,25 @@
   "name": "telex-summarizer",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abisoyeo/telex-summarizer-agent"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "mastra dev",
     "build": "mastra build",
     "start": "mastra start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "a2a",
+    "mastra",
+    "telex",
+    "agent",
+    "ai",
+    "workflow"
+  ],
+  "author": "Abisoye Ogunmona",
   "license": "ISC",
   "description": "",
   "type": "module",
