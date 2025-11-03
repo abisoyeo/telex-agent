@@ -2,6 +2,7 @@ import { Mastra } from "@mastra/core/mastra";
 import { PinoLogger } from "@mastra/loggers";
 import { LibSQLStore } from "@mastra/libsql";
 import { summarizerAgent } from "./agents/summarizer-agent";
+import { a2aAgentRoute } from "./routes/a2a-agent-route";
 
 export const mastra = new Mastra({
   agents: { summarizerAgent },
@@ -20,5 +21,12 @@ export const mastra = new Mastra({
   observability: {
     // Enables DefaultExporter and CloudExporter for AI tracing
     default: { enabled: true },
+  },
+  server: {
+    build: {
+      openAPIDocs: true,
+      swaggerUI: true,
+    },
+    apiRoutes: [a2aAgentRoute],
   },
 });
